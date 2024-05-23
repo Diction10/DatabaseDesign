@@ -1,0 +1,80 @@
+			CASE STUDY FOR DATABSE DESIGN OF A JOURNAL PUBLICATION
+
+
+The Journal of E-commerce Research Knowledge is a prestigious information system research
+journal. It uses a peer-review process to select manuscripts for publication. Only about 10
+percent of the manuscripts submitted to the Journal are accepted for publication. 
+A new issue of the Journal is published each quarter. For each Journal, a group of editors work 
+to control the Journal. 
+
+We need to keep information about the editors, such as full name, mobile number,
+and years of expertise.
+
+Unsolicited manuscripts are submitted by authors. 
+
+When a manuscript is received, the editor
+will assign the manuscript a number and record some basic information about sit in the system.
+The title of the manuscript, the date it was received, and a manuscript status of “received” are
+entered. (It is assumed that an editor can work on multiple manuscripts, but a manuscript is woked on by 
+only one editor)
+
+Information about the author(s) is also recorded. 
+
+For each author, the author’s name,
+mailing address, e-mail address, and affiliation (school or company for which the author works)
+are recorded. 
+
+Every manuscript must have an author. Only authors who have submitted
+manuscripts are kept in the system. It is typical for a manuscript to have several authors. A
+single author may have submitted many different manuscripts to the Journal (Many to Many). Additionally,
+when a manuscript has multiple authors, it is important to record the order in which the authors
+are listed in the manuscript credits. 
+
+At her earliest convenience, the editor will briefly review
+the topic of the manuscript to ensure that the manuscript’s contents fall within the scope of the
+Journal. If the content is not within the scope of the Journal, the manuscript’s status is changed
+to “rejected” and the author is notified via e-mail. 
+
+If the content is within the scope of the Journal,
+then the editor selects three or more reviewers to review the manuscript. 
+
+Reviewers work for
+other companies or universities and read manuscripts to ensure the scientific validity of the
+manuscripts. 
+
+For each reviewer, the system records a reviewer number, name, e-mail address,
+affiliation, and areas of interest. Areas of interest are predefined areas of expertise that the
+reviewer has specified. An area of interest is identified by an IS code and includes a description
+(e.g., IS2003 is the code for “database modeling”). A reviewer can have many areas of interest,
+and an area of interest can be associated with many reviewers. All reviewers must specify at
+least one area of interest. It is unusual, but it is possible, to have an area of interest for which
+the Journal has no reviewers. The editor will change the status of the manuscript to “under
+review” and record which reviewers the manuscript was sent to and the date on which it was
+sent to each reviewer. A reviewer will typically receive several manuscripts to review each
+year, although new reviewers may not have received any manuscripts yet.
+The reviewers will read the manuscript at their earliest convenience and provide feedback to
+the editor regarding the manuscript. 
+The feedback from each reviewer includes ID and rating
+the manuscript on a 10-point scale for appropriateness, clarity, methodology, and contribution
+to the field, as well as a recommendation for publication (accept or reject). The editor will record
+all of this information in the system for each review received from each reviewer and the date
+that the feedback was received. Once all of the reviewers have provided their evaluation of the
+manuscript, the editor will decide whether or not to publish the manuscript. If the editor decides
+to publish the manuscript, the manuscript’s status is changed to “accepted,” and the date of
+acceptance for the manuscript is recorded. If the manuscript is not to be published, the status
+is changed to “rejected.” Once a manuscript has been accepted for publication, it must be
+scheduled. 
+For each issue of the Journal, the publication period (fall, winter, spring, or
+summer), publication year, volume, and number are recorded. An issue will contain many
+manuscripts, although the issue may be created in the system before it is known which
+manuscripts will go in that issue. An accepted manuscript appears in only one issue of the
+Journal. 
+Each manuscript goes through a typesetting process that formats the content and it
+includes format name font style, font size, line spacing, justification, etc.). Once the manuscript
+has been typeset, the number of pages that the manuscript will occupy is recorded in the
+system. The editor will then make decisions about which issue each accepted manuscript will
+appear in and the order of manuscripts within each issue. The order and the beginning page
+number for each manuscript must be stored in the system. Once the manuscript has been
+scheduled for an issue, the status of the manuscript is changed to “scheduled.” Once an issue
+is published, the print date for the issue is recorded, and the statuses of all of the manuscripts
+in that issue are changed to “published.”.
